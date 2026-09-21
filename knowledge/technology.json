@@ -1,0 +1,101 @@
+{
+  "id": "technology",
+  "note": "Technologies are listed only where they appear in the public portfolio. Non-portfolio glosses are dictionary-level definitions, not claims about HRB capability.",
+  "portfolioStack": {
+    "name": "Portfolio stack",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Framer Motion",
+      "lucide-react"
+    ],
+    "note": "This portfolio itself is built with React, TypeScript and Vite."
+  },
+  "projectTechnologies": {
+    "hrb-legal-ai": [
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "pgvector",
+      "RAG",
+      "Agentic AI",
+      "MCP"
+    ],
+    "hrb-legal-reader": [
+      "OCR",
+      "Document Intelligence",
+      "Python",
+      "AI",
+      "RAG"
+    ],
+    "hrb-digital-systems": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "AI",
+      "Automation",
+      "System Architecture"
+    ]
+  },
+  "techs": [
+    {
+      "name": "Python",
+      "gloss": "A general-purpose programming language. Listed among HRB Legal AI and HRB Legal Reader technologies."
+    },
+    {
+      "name": "FastAPI",
+      "gloss": "A modern Python web framework for building APIs. Listed among HRB Legal AI technologies."
+    },
+    {
+      "name": "PostgreSQL",
+      "gloss": "A relational database. Listed among HRB Legal AI technologies."
+    },
+    {
+      "name": "pgvector",
+      "gloss": "A PostgreSQL extension for vector similarity search, associated with grounded retrieval. Listed among HRB Legal AI technologies."
+    },
+    {
+      "name": "RAG",
+      "gloss": "Retrieval-augmented generation — an approach that grounds AI answers in retrieved source material rather than relying on the model alone. Used in HRB Legal AI and HRB Legal Reader."
+    },
+    {
+      "name": "Agentic AI",
+      "gloss": "AI systems and workflows that can act toward a goal across multiple steps rather than only responding to a single prompt. HRB Legal AI is described as an agentic legal AI platform."
+    },
+    {
+      "name": "MCP",
+      "gloss": "Model Context Protocol — a standard for connecting models to tools and data. Listed among HRB Legal AI technologies."
+    },
+    {
+      "name": "OCR",
+      "gloss": "Optical character recognition — converting images or scanned text into machine-readable text. Used in HRB Legal Reader for document processing."
+    },
+    {
+      "name": "Document Intelligence",
+      "gloss": "Automated processing of documents to extract and understand their structure and content. The core focus of HRB Legal Reader."
+    },
+    {
+      "name": "React",
+      "gloss": "A JavaScript library for building interfaces. Listed among HRB Digital Systems technologies and used to build this portfolio."
+    },
+    {
+      "name": "TypeScript",
+      "gloss": "A typed superset of JavaScript. Listed among HRB Digital Systems technologies and used to build this portfolio."
+    },
+    {
+      "name": "Vite",
+      "gloss": "A frontend build tool and development server. Listed among HRB Digital Systems technologies and used to build this portfolio."
+    },
+    {
+      "name": "Automation",
+      "gloss": "Software that performs repeated or complex operations without manual steps. Listed among HRB Digital Systems technologies."
+    },
+    {
+      "name": "System Architecture",
+      "gloss": "The structural design of how applications, data and services connect. Listed among HRB Digital Systems technologies."
+    }
+  ],
+  "source": "src/data/projects.ts, package.json"
+}

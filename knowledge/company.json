@@ -1,0 +1,32 @@
+{
+  "id": "company",
+  "name": "HRB",
+  "tagline": "Building Digital Systems.",
+  "metaDescription": "HRB builds digital systems across web, AI, legal technology, document intelligence, and intelligent software architecture.",
+  "positioning": "Designing intelligent digital experiences — where interface, intelligence, and infrastructure become one.",
+  "statement": "I build at the intersection of design, software, and intelligent systems.",
+  "focus": [
+    "HRB focuses on building practical digital systems where thoughtful interface design, modern software engineering, artificial intelligence, and automation work together.",
+    "The work spans web platforms, legal technology, document intelligence, agentic AI, and production-oriented system architecture."
+  ],
+  "principles": [
+    {
+      "title": "Clarity",
+      "description": "Complex systems should remain understandable. Interfaces, workflows, and information should communicate their purpose without unnecessary friction."
+    },
+    {
+      "title": "Intelligence",
+      "description": "AI should solve useful problems rather than exist as decoration. The focus is on grounded, practical intelligence that supports real workflows."
+    },
+    {
+      "title": "Systems",
+      "description": "Strong products depend on the architecture behind them. Data, APIs, retrieval, automation, agents, and interfaces should work as one coherent system."
+    },
+    {
+      "title": "Craft",
+      "description": "Technical depth and visual quality belong together. Details in interaction, performance, structure, and implementation shape the final experience."
+    }
+  ],
+  "footerLine": "Design / Software / Intelligent Systems",
+  "source": "index.html, src/data/hero.ts, src/data/about.ts"
+}

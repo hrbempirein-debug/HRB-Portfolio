@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" class="env-layer-root" data-env="web" role="img" aria-label="WEB — interface ecosystem">
+  <defs>
+    <linearGradient id="web-veil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgb(226 232 240)" stop-opacity="0" />
+      <stop offset="0.12" stop-color="rgb(226 232 240)" stop-opacity="1" />
+      <stop offset="0.9" stop-color="rgb(226 232 240)" stop-opacity="1" />
+      <stop offset="1" stop-color="rgb(226 232 240)" stop-opacity="0" />
+    </linearGradient>
+    <radialGradient id="web-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="rgb(152 180 205)" stop-opacity="0.1" />
+      <stop offset="1" stop-color="rgb(152 180 205)" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <style>
+    :root {
+      --env-line: rgb(226 232 240 / 13%);
+      --env-line-faint: rgb(226 232 240 / 7%);
+      --env-line-strong: rgb(226 232 240 / 30%);
+      --env-accent: rgb(152 180 205 / 55%);
+      --env-accent-soft: rgb(152 180 205 / 22%);
+      --env-core: rgb(160 190 214 / 55%);
+    }
+    .env-line,.env-line-faint,.env-line-strong,.env-accent,.env-accent-soft,.env-node,.env-node-accent{fill:none;stroke-width:1}
+    .env-line{stroke:var(--env-line)}
+    .env-line-faint{stroke:var(--env-line-faint)}
+    .env-line-strong{stroke:var(--env-line-strong)}
+    .env-accent{stroke:var(--env-accent)}
+    .env-accent-soft{stroke:var(--env-accent-soft)}
+    .env-node{fill:var(--env-line-strong);stroke:none}
+    .env-node-accent{fill:var(--env-accent);stroke:none}
+    .env-fill-accent{fill:var(--env-accent)}
+    .env-fill-core{fill:var(--env-core)}
+    .env-fill-panel{fill:rgb(226 232 240 / 4%)}
+    .env-fill-panel-strong{fill:rgb(226 232 240 / 7%)}
+    .env-line-thin{stroke-width:.75}
+    .env-line-soft{stroke-width:1.5}
+    .env-layer-bg{opacity:.6}
+    .env-layer-mid{opacity:.8}
+    .env-layer-fg{opacity:.95}
+    @keyframes env-spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+    @keyframes env-drift{from{transform:translate3d(0,-8px,0)}to{transform:translate3d(0,8px,0)}}
+    @keyframes env-drift-sm{from{transform:translate3d(0,-3px,0)}to{transform:translate3d(0,3px,0)}}
+    @keyframes env-drift-lg{from{transform:translate3d(0,-13px,0)}to{transform:translate3d(0,13px,0)}}
+    @keyframes env-march{to{stroke-dashoffset:-20px}}
+    @keyframes env-travel{to{offset-distance:100%}}
+    @keyframes env-pulse{0%,100%{opacity:.22}50%{opacity:.7}}
+    @keyframes env-float{0%,100%{transform:translate3d(0,0,0);opacity:.1}50%{transform:translate3d(0,-16px,0);opacity:.45}}
+    @keyframes env-drift-x{from{transform:translate3d(-9px,0,0)}to{transform:translate3d(9px,0,0)}}
+    @keyframes env-scan{from{transform:translateY(0)}to{transform:translateY(84px)}}
+    .env-drift-bg{animation:env-drift-sm 84s ease-in-out infinite alternate}
+    .env-drift{animation:env-drift 44s ease-in-out infinite alternate}
+    .env-drift-fg{animation:env-drift-lg 28s ease-in-out infinite alternate}
+    .env-drift-x{animation:env-drift-x 32s ease-in-out infinite alternate}
+    .env-spin-slower{transform-box:fill-box;transform-origin:center;animation:env-spin 150s linear infinite}
+    .env-spin-reverse{animation-direction:reverse}
+    .env-march{stroke-dasharray:5 15;animation:env-march 20s linear infinite}
+    .env-travel{animation:env-travel 30s linear infinite}
+    .env-pulse{animation:env-pulse 6s ease-in-out infinite}
+    .env-float{animation:env-float 14s ease-in-out infinite}
+    .env-scanline{animation:env-scan 11s ease-in-out infinite alternate}
+    @media (prefers-reduced-motion: reduce){
+      .env-drift-bg,.env-drift,.env-drift-fg,.env-drift-x,.env-spin-slower,.env-march,.env-travel,.env-pulse,.env-float,.env-scanline{animation-duration:.001ms !important;animation-iteration-count:1 !important}
+    }
+  </style>
+
+  <g class="env-layer-bg" data-depth="bg">
+    <g class="env-drift-bg web-grid" stroke="url(#web-veil)" stroke-width="1">
+      <line class="env-line-thin" x1="100" y1="0" x2="100" y2="1000" />
+      <line class="env-line-thin" x1="300" y1="0" x2="300" y2="1000" />
+      <line class="env-line-thin" x1="500" y1="0" x2="500" y2="1000" />
+      <line class="env-line-thin" x1="700" y1="0" x2="700" y2="1000" />
+      <line class="env-line-thin" x1="900" y1="0" x2="900" y2="1000" />
+      <line class="env-line-thin" x1="1100" y1="0" x2="1100" y2="1000" />
+      <line class="env-line-thin" x1="1300" y1="0" x2="1300" y2="1000" />
+      <line class="env-line-thin" x1="1500" y1="0" x2="1500" y2="1000" />
+      <line class="env-line-thin" x1="0" y1="140" x2="1600" y2="140" />
+      <line class="env-line-thin" x1="0" y1="500" x2="1600" y2="500" />
+      <line class="env-line-thin" x1="0" y1="860" x2="1600" y2="860" />
+    </g>
+
+    <g class="env-drift-bg env-hero-bg-far web-depth">
+      <circle cx="1180" cy="320" r="620" fill="url(#web-glow)" />
+      <circle cx="300" cy="860" r="520" fill="url(#web-glow)" />
+      <g stroke="url(#web-veil)" stroke-width="1">
+        <rect class="env-line-faint" x="860" y="60" width="620" height="720" rx="28" />
+        <line class="env-line-thin" x1="1080" y1="60" x2="1080" y2="780" />
+        <line class="env-line-thin" x1="1300" y1="60" x2="1300" y2="780" />
+        <rect class="env-line-faint" x="80" y="240" width="460" height="620" rx="24" />
+        <line class="env-line-thin" x1="230" y1="240" x2="230" y2="860" />
+        <path d="M -160 980 C 300 560 1300 560 1760 980" fill="none" />
+      </g>
+    </g>
+  </g>
+
+  <g class="env-drift web-connections" data-depth="mid">
+    <path class="env-line-strong env-line-soft env-march" d="M 150 290 C 300 230 380 320 470 400 C 545 466 640 640 770 690 C 900 740 1090 700 1200 600 C 1290 520 1400 560 1490 520" fill="none" />
+    <circle class="env-node web-nodes" cx="150" cy="290" r="3" />
+    <circle class="env-node web-nodes" cx="470" cy="400" r="3" />
+    <circle class="env-node web-nodes" cx="770" cy="690" r="3" />
+    <circle class="env-node web-nodes" cx="1200" cy="600" r="3" />
+    <circle class="env-node web-nodes" cx="1490" cy="520" r="3" />
+
+    <path class="env-line-faint env-drift-x" d="M 400 372 C 520 440 560 560 640 652" fill="none" />
+    <path class="env-line-faint env-drift-x" d="M 1180 470 C 1180 560 1140 640 1010 662" fill="none" />
+    <path class="env-line-faint env-drift-x" d="M 150 290 C 70 260 70 180 140 150" fill="none" />
+    <path class="env-line-faint env-drift-x" d="M 1490 520 C 1560 470 1540 420 1490 380" fill="none" />
+
+    <g class="env-drift-x web-nodes" transform="translate(470, 400)">
+      <g class="env-spin-slower">
+        <circle r="46" class="env-line-faint" />
+        <circle r="62" class="env-line-faint" />
+      </g>
+      <g class="env-spin-slower env-spin-reverse">
+        <circle r="62" class="env-accent-soft" stroke-dasharray="3 9" style="transform-origin:center" fill="none" />
+      </g>
+      <circle class="env-travel env-node-accent" r="2.5" style="offset-path:path('M 0 0 m -46 0 a 46 46 0 1 1 92 0 a 46 46 0 1 1 -92 0')" />
+      <circle class="env-fill-core env-pulse" r="5" />
+    </g>
+
+    <g class="web-panels">
+      <rect class="env-fill-panel" x="150" y="200" width="260" height="180" rx="10" />
+      <rect class="env-line" x="150" y="200" width="260" height="180" rx="10" />
+      <g transform="translate(150, 200)">
+        <rect x="16" y="16" width="120" height="6" rx="1" class="env-line-strong" />
+        <line x1="16" y1="44" x2="206" y2="44" class="env-line-faint" />
+        <line x1="16" y1="62" x2="170" y2="62" class="env-line-faint" />
+        <line x1="180" y1="30" x2="180" y2="156" class="env-line-faint" />
+        <circle cx="196" cy="152" r="2" class="env-node" />
+        <path d="M 226 146 H 240 V 160" fill="none" class="env-accent-soft" />
+      </g>
+    </g>
+
+    <g class="web-panels">
+      <rect class="env-fill-panel" x="980" y="360" width="270" height="200" rx="10" />
+      <rect class="env-line" x="980" y="360" width="270" height="200" rx="10" />
+      <g transform="translate(980, 360)">
+        <line x1="16" y1="16" x2="214" y2="16" class="env-accent-soft" />
+        <rect x="16" y="32" width="150" height="7" rx="1" class="env-line" />
+        <rect x="16" y="54" width="40" height="90" rx="2" class="env-line-faint" />
+        <rect x="68" y="78" width="40" height="66" rx="2" class="env-line-faint" />
+        <rect x="120" y="102" width="40" height="42" rx="2" class="env-fill-accent" />
+        <line x1="16" y1="152" x2="238" y2="152" class="env-line-faint" />
+        <g transform="translate(214, 44)">
+          <circle r="14" class="env-line-faint" />
+          <circle r="6" class="env-line-faint" />
+          <circle r="2" class="env-node" />
+        </g>
+      </g>
+    </g>
+
+    <g class="web-panels">
+      <rect class="env-fill-panel" x="620" y="660" width="280" height="130" rx="10" />
+      <rect class="env-line" x="620" y="660" width="280" height="130" rx="10" />
+      <g transform="translate(620, 660)">
+        <rect x="16" y="16" width="90" height="6" rx="1" class="env-line-strong" />
+        <line x1="16" y1="40" x2="248" y2="40" class="env-line-faint" />
+        <line x1="16" y1="56" x2="210" y2="56" class="env-line-faint" />
+        <line x1="16" y1="80" x2="164" y2="80" class="env-line-faint" />
+        <circle cx="48" cy="96" r="2" class="env-node" />
+        <circle cx="100" cy="96" r="2" class="env-node" />
+        <circle cx="152" cy="96" r="2" class="env-node" />
+        <circle cx="246" cy="16" r="3" class="env-node-accent env-pulse" />
+      </g>
+    </g>
+  </g>
+
+  <g class="env-layer-fg" data-depth="fg">
+    <g class="env-drift-fg web-depth web-panels web-nodes">
+      <g class="web-panels">
+        <rect class="env-fill-panel-strong" x="1010" y="740" width="230" height="150" rx="12" />
+        <rect class="env-line-strong" x="1010" y="740" width="230" height="150" rx="12" />
+        <g transform="translate(1010, 740)">
+          <line x1="16" y1="16" x2="198" y2="16" class="env-accent" />
+          <rect x="16" y="30" width="110" height="6" rx="1" class="env-line-strong" />
+          <rect x="16" y="56" width="34" height="74" rx="2" class="env-fill-accent" />
+          <rect x="62" y="80" width="34" height="50" rx="2" class="env-line" />
+          <rect x="108" y="68" width="34" height="62" rx="2" class="env-line" />
+          <circle cx="202" cy="24" r="3" class="env-node-accent env-pulse" />
+          <path d="M 136 118 H 152 V 134" fill="none" class="env-accent-soft" />
+        </g>
+      </g>
+
+      <path d="M 446 446 v 18 h 18" fill="none" class="env-accent env-float" />
+
+      <g class="web-nodes">
+        <rect x="378" y="148" width="4" height="4" class="env-node-accent env-float" style="animation-delay:0s" />
+        <rect x="618.5" y="188.5" width="3" height="3" class="env-node-accent env-float" style="animation-delay:-1.4s" />
+        <rect x="1008" y="168" width="4" height="4" class="env-node-accent env-float" style="animation-delay:-2.8s" />
+        <rect x="1288.5" y="258.5" width="3" height="3" class="env-node-accent env-float" style="animation-delay:-4.2s" />
+        <rect x="1488" y="338" width="4" height="4" class="env-node-accent env-float" style="animation-delay:-5.6s" />
+        <rect x="258.5" y="518.5" width="3" height="3" class="env-node-accent env-float" style="animation-delay:-7s" />
+        <rect x="898.5" y="468.5" width="3" height="3" class="env-node-accent env-float" style="animation-delay:-8.4s" />
+        <rect x="558" y="878" width="4" height="4" class="env-node-accent env-float" style="animation-delay:-9.8s" />
+        <rect x="1258.5" y="878.5" width="3" height="3" class="env-node-accent env-float" style="animation-delay:-11.2s" />
+        <rect x="698.5" y="298.5" width="3" height="3" class="env-node-accent env-float" style="animation-delay:-12.6s" />
+        <rect x="1338" y="758" width="4" height="4" class="env-node-accent env-float" style="animation-delay:-14s" />
+        <rect x="438.5" y="758.5" width="3" height="3" class="env-node-accent env-float" style="animation-delay:-15.4s" />
+      </g>
+    </g>
+  </g>
+</svg>

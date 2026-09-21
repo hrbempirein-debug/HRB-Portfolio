@@ -1,0 +1,26 @@
+{
+  "id": "capabilities",
+  "heading": "WHAT I BUILD",
+  "statement": "I design digital experiences, intelligent systems, and the infrastructure that connects them.",
+  "capabilities": [
+    {
+      "id": "web",
+      "name": "Web",
+      "description": "Modern interfaces and production-ready web applications designed around clarity, interaction, performance, and maintainable architecture.",
+      "keywords": ["Interfaces", "Responsive", "Performance", "web applications", "modern interfaces", "production-ready", "frontend", "responsive interfaces", "maintainable architecture", "interaction", "web development", "web capabilities", "what do you build"]
+    },
+    {
+      "id": "ai",
+      "name": "AI",
+      "description": "AI-powered products and workflows spanning agentic systems, retrieval, document intelligence, legal research, and grounded automation.",
+      "keywords": ["Agents", "Workflows", "Automation", "ai products", "ai-powered", "ai systems", "agentic systems", "retrieval", "document intelligence", "legal research", "grounded automation", "artificial intelligence", "llm", "what do you build"]
+    },
+    {
+      "id": "systems",
+      "name": "Systems",
+      "description": "The architecture connecting applications, data, APIs, automation, databases, retrieval systems, and intelligent agents into coherent digital products.",
+      "keywords": ["Architecture", "Integration", "Scale", "infrastructure", "apis", "databases", "data", "application architecture", "system architecture", "intelligent agents", "backend", "systems practice", "digital systems practice", "what do you build"]
+    }
+  ],
+  "source": "src/data/capabilities.ts"
+}

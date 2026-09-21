@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" class="env-layer-root" data-env="systems" role="img" aria-label="SYSTEMS — distributed architecture">
+  <defs>
+    <linearGradient id="sys-veil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgb(203 213 225)" stop-opacity="0" />
+      <stop offset="0.5" stop-color="rgb(203 213 225)" stop-opacity="1" />
+      <stop offset="1" stop-color="rgb(203 213 225)" stop-opacity="0.35" />
+    </linearGradient>
+    <radialGradient id="sys-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="rgb(120 139 163)" stop-opacity="0.1" />
+      <stop offset="1" stop-color="rgb(120 139 163)" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <style>
+    :root {
+      --env-line: rgb(226 232 240 / 13%);
+      --env-line-faint: rgb(226 232 240 / 7%);
+      --env-line-strong: rgb(226 232 240 / 30%);
+      --env-accent: rgb(152 180 205 / 55%);
+      --env-accent-soft: rgb(152 180 205 / 22%);
+      --env-core: rgb(160 190 214 / 55%);
+    }
+    .env-line,.env-line-faint,.env-line-strong,.env-accent,.env-accent-soft,.env-node,.env-node-accent{fill:none;stroke-width:1}
+    .env-line{stroke:var(--env-line)}
+    .env-line-faint{stroke:var(--env-line-faint)}
+    .env-line-strong{stroke:var(--env-line-strong)}
+    .env-accent{stroke:var(--env-accent)}
+    .env-accent-soft{stroke:var(--env-accent-soft)}
+    .env-node{fill:var(--env-line-strong);stroke:none}
+    .env-node-accent{fill:var(--env-accent);stroke:none}
+    .env-fill-accent{fill:var(--env-accent)}
+    .env-fill-core{fill:var(--env-core)}
+    .env-fill-panel{fill:rgb(226 232 240 / 4%)}
+    .env-fill-panel-strong{fill:rgb(226 232 240 / 7%)}
+    .env-line-thin{stroke-width:.75}
+    .env-line-soft{stroke-width:1.5}
+    .env-layer-bg{opacity:.6}
+    .env-layer-mid{opacity:.8}
+    .env-layer-fg{opacity:.95}
+    @keyframes env-spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+    @keyframes env-drift{from{transform:translate3d(0,-8px,0)}to{transform:translate3d(0,8px,0)}}
+    @keyframes env-drift-sm{from{transform:translate3d(0,-3px,0)}to{transform:translate3d(0,3px,0)}}
+    @keyframes env-drift-lg{from{transform:translate3d(0,-13px,0)}to{transform:translate3d(0,13px,0)}}
+    @keyframes env-march{to{stroke-dashoffset:-20px}}
+    @keyframes env-travel{to{offset-distance:100%}}
+    @keyframes env-pulse{0%,100%{opacity:.22}50%{opacity:.7}}
+    @keyframes env-float{0%,100%{transform:translate3d(0,0,0);opacity:.1}50%{transform:translate3d(0,-16px,0);opacity:.45}}
+    @keyframes env-scan{from{transform:translateY(0)}to{transform:translateY(84px)}}
+    .env-drift-bg{animation:env-drift-sm 84s ease-in-out infinite alternate}
+    .env-drift{animation:env-drift 44s ease-in-out infinite alternate}
+    .env-drift-fg{animation:env-drift-lg 28s ease-in-out infinite alternate}
+    .env-drift-sm{animation:env-drift-sm 40s ease-in-out infinite alternate}
+    .env-drift-x{animation:env-drift-x 32s ease-in-out infinite alternate}
+    .env-spin-slower{transform-box:fill-box;transform-origin:center;animation:env-spin 150s linear infinite}
+    .env-spin-reverse{animation-direction:reverse}
+    .env-march{stroke-dasharray:5 15;animation:env-march 20s linear infinite}
+    .env-travel{animation:env-travel 30s linear infinite}
+    .env-pulse{animation:env-pulse 6s ease-in-out infinite}
+    .env-float{animation:env-float 14s ease-in-out infinite}
+    .env-scanline{animation:env-scan 11s ease-in-out infinite alternate}
+    @keyframes env-drift-x{from{transform:translate3d(-9px,0,0)}to{transform:translate3d(9px,0,0)}}
+    @media (prefers-reduced-motion: reduce){
+      .env-drift-bg,.env-drift,.env-drift-fg,.env-drift-sm,.env-spin-slower,.env-march,.env-travel,.env-pulse,.env-float,.env-scanline,.env-drift-x{animation-duration:.001ms !important;animation-iteration-count:1 !important}
+    }
+  </style>
+
+  <g class="env-layer-bg" data-depth="bg">
+    <g class="env-drift-sm systems-depth">
+      <circle cx="1180" cy="600" r="620" fill="url(#sys-glow)" />
+    </g>
+    <g class="env-drift-bg env-hero-bg-far systems-depth" stroke="url(#sys-veil)" stroke-width="1">
+      <g class="env-line-thin">
+        <line x1="-80" y1="140" x2="900" y2="140" />
+        <line x1="-80" y1="134" x2="-80" y2="146" />
+        <line x1="16" y1="134" x2="16" y2="146" />
+        <line x1="112" y1="134" x2="112" y2="146" />
+        <line x1="208" y1="134" x2="208" y2="146" />
+        <line x1="304" y1="134" x2="304" y2="146" />
+        <line x1="400" y1="134" x2="400" y2="146" />
+        <line x1="496" y1="134" x2="496" y2="146" />
+        <line x1="592" y1="134" x2="592" y2="146" />
+        <line x1="688" y1="134" x2="688" y2="146" />
+        <line x1="784" y1="134" x2="784" y2="146" />
+      </g>
+      <g class="env-line-thin">
+        <line x1="-80" y1="210" x2="700" y2="210" />
+        <line x1="-80" y1="204" x2="-80" y2="216" />
+        <line x1="16" y1="204" x2="16" y2="216" />
+        <line x1="112" y1="204" x2="112" y2="216" />
+        <line x1="208" y1="204" x2="208" y2="216" />
+        <line x1="304" y1="204" x2="304" y2="216" />
+        <line x1="400" y1="204" x2="400" y2="216" />
+        <line x1="496" y1="204" x2="496" y2="216" />
+        <line x1="592" y1="204" x2="592" y2="216" />
+        <line x1="688" y1="204" x2="688" y2="216" />
+      </g>
+      <g class="env-line-thin">
+        <line x1="-80" y1="280" x2="820" y2="280" />
+        <line x1="-80" y1="274" x2="-80" y2="286" />
+        <line x1="16" y1="274" x2="16" y2="286" />
+        <line x1="112" y1="274" x2="112" y2="286" />
+        <line x1="208" y1="274" x2="208" y2="286" />
+        <line x1="304" y1="274" x2="304" y2="286" />
+        <line x1="400" y1="274" x2="400" y2="286" />
+        <line x1="496" y1="274" x2="496" y2="286" />
+        <line x1="592" y1="274" x2="592" y2="286" />
+        <line x1="688" y1="274" x2="688" y2="286" />
+        <line x1="784" y1="274" x2="784" y2="286" />
+      </g>
+      <path d="M 1130 -200 V 1400" fill="none" />
+      <path d="M 1290 -200 V 1400" fill="none" />
+      <path d="M 1450 -200 V 1400" fill="none" />
+    </g>
+  </g>
+
+  <g class="env-drift systems-connections systems-modules" data-depth="mid">
+    <path class="env-line-strong env-line-soft env-march" d="M -320 540 C 160 500 400 580 660 600 C 940 620 1180 620 1360 580 C 1480 550 1560 535 1600 530" fill="none" style="animation-duration:32s" />
+    <circle class="env-travel env-node-accent" r="3" style="offset-path:path('M -320 540 C 160 500 400 580 660 600 C 940 620 1180 620 1360 580 C 1480 550 1560 535 1600 530');animation-duration:28s" />
+    <circle class="env-travel env-node-accent" r="2" style="offset-path:path('M -320 540 C 160 500 400 580 660 600 C 940 620 1180 620 1360 580 C 1480 550 1560 535 1600 530');animation-duration:52s" />
+
+    <g class="env-line-faint systems-connections">
+      <path d="M 348 558 L 375 718" fill="none" />
+      <path d="M 610 596 L 680 718" fill="none" />
+      <path d="M 1010 602 L 1115 390" fill="none" />
+      <path d="M 880 610 L 955 700" fill="none" />
+      <path d="M 1240 595 L 1315 690" fill="none" />
+    </g>
+
+    <g class="systems-modules">
+      <rect class="env-fill-panel" x="300" y="718" width="150" height="80" rx="8" />
+      <rect class="env-line" x="300" y="718" width="150" height="80" rx="8" />
+      <rect class="env-line-faint" x="312" y="730" width="126" height="5" rx="1" />
+      <rect class="env-line-faint" x="312" y="744" width="106" height="3" rx="1" />
+      <rect class="env-line-faint" x="312" y="752" width="92" height="3" rx="1" />
+      <circle class="env-node-accent env-float" cx="434" cy="780" r="3" style="animation-delay:-2.5s" />
+    </g>
+    <g class="systems-modules">
+      <rect class="env-fill-panel" x="600" y="718" width="160" height="80" rx="8" />
+      <rect class="env-line" x="600" y="718" width="160" height="80" rx="8" />
+      <rect class="env-line-faint" x="612" y="730" width="136" height="5" rx="1" />
+      <rect class="env-line-faint" x="612" y="744" width="116" height="3" rx="1" />
+      <rect class="env-line-faint" x="612" y="752" width="102" height="3" rx="1" />
+      <circle class="env-node-accent env-float" cx="744" cy="780" r="3" style="animation-delay:-5s" />
+    </g>
+    <g class="systems-modules">
+      <rect class="env-fill-panel" x="1040" y="320" width="150" height="70" rx="8" />
+      <rect class="env-line-strong" x="1040" y="320" width="150" height="70" rx="8" />
+      <rect class="env-line-faint" x="1052" y="332" width="126" height="5" rx="1" />
+      <rect class="env-line-faint" x="1052" y="346" width="106" height="3" rx="1" />
+      <rect class="env-line-faint" x="1052" y="354" width="92" height="3" rx="1" />
+      <circle class="env-node-accent env-float" cx="1174" cy="372" r="3" style="animation-delay:-7.5s" />
+    </g>
+    <g class="systems-modules">
+      <rect class="env-fill-panel" x="880" y="700" width="150" height="80" rx="8" />
+      <rect class="env-line" x="880" y="700" width="150" height="80" rx="8" />
+      <rect class="env-line-faint" x="892" y="712" width="126" height="5" rx="1" />
+      <rect class="env-line-faint" x="892" y="726" width="106" height="3" rx="1" />
+      <rect class="env-line-faint" x="892" y="734" width="92" height="3" rx="1" />
+      <circle class="env-node-accent env-float" cx="1014" cy="762" r="3" style="animation-delay:-4s" />
+    </g>
+    <g class="systems-modules">
+      <rect class="env-fill-panel" x="1240" y="690" width="150" height="90" rx="8" />
+      <rect class="env-line" x="1240" y="690" width="150" height="90" rx="8" />
+      <rect class="env-line-faint" x="1252" y="702" width="126" height="5" rx="1" />
+      <rect class="env-line-faint" x="1252" y="716" width="106" height="3" rx="1" />
+      <rect class="env-line-faint" x="1252" y="724" width="92" height="3" rx="1" />
+      <circle class="env-node-accent env-float" cx="1374" cy="762" r="3" style="animation-delay:-9s" />
+    </g>
+
+    <g class="env-line-faint env-hero-mg-extra systems-connections">
+      <path d="M 1080 390 L 1260 690" fill="none" />
+      <path d="M 680 718 L 880 716" fill="none" />
+    </g>
+
+    <g class="env-hero-mg-extra systems-nodes" transform="translate(1420, 480)">
+      <g class="env-spin-slower">
+        <path d="M 0 -150 A 150 150 0 0 1 130 150" fill="none" class="env-accent-soft" />
+        <path d="M 0 -88 A 88 88 0 0 1 76 88" fill="none" class="env-line-faint" />
+      </g>
+      <circle class="env-travel env-node-accent" r="2.5" style="offset-path:path('M 0 -150 A 150 150 0 0 1 130 150')" />
+      <line y1="0" y2="96" class="env-line-faint" />
+      <circle r="3" class="env-node" />
+    </g>
+  </g>
+
+  <g class="env-layer-fg" data-depth="fg">
+    <g class="env-drift-fg systems-flow systems-nodes">
+      <g class="systems-flow" transform="translate(1220, 810)">
+        <rect class="env-fill-panel-strong" x="0" y="0" width="230" height="150" rx="10" />
+        <rect class="env-line-strong" x="0" y="0" width="230" height="150" rx="10" />
+        <line x1="16" y1="16" x2="198" y2="16" class="env-accent-soft" />
+        <rect x="16" y="30" width="140" height="6" rx="1" class="env-line-strong" />
+        <rect x="16" y="54" width="30" height="82" rx="2" class="env-fill-accent" />
+        <rect x="56" y="78" width="30" height="58" rx="2" class="env-line" />
+        <rect x="96" y="66" width="30" height="70" rx="2" class="env-line" />
+        <line x1="16" y1="140" x2="198" y2="140" class="env-line-faint" />
+        <rect class="env-accent-soft env-scanline" x="8" y="34" width="214" height="2" opacity="0.4" />
+        <circle cx="202" cy="24" r="3" class="env-node-accent env-pulse" />
+      </g>
+
+      <g class="systems-nodes">
+        <rect x="358.5" y="218.5" width="3" height="3" class="env-node-accent env-float" />
+        <rect x="598" y="298" width="4" height="4" class="env-node-accent env-float" style="animation-delay:-1.4s" />
+        <rect x="978.5" y="198.5" width="3" height="3" class="env-node-accent env-float" style="animation-delay:-2.8s" />
+        <rect x="1238" y="218" width="4" height="4" class="env-node-accent env-float" style="animation-delay:-4.2s" />
+        <rect x="1478.5" y="298.5" width="3" height="3" class="env-node-accent env-float" style="animation-delay:-5.6s" />
+        <rect x="218.5" y="638.5" width="3" height="3" class="env-node-accent env-float" style="animation-delay:-7s" />
+        <rect x="758.5" y="458.5" width="3" height="3" class="env-node-accent env-float" style="animation-delay:-8.4s" />
+        <rect x="1078" y="838" width="4" height="4" class="env-node-accent env-float" style="animation-delay:-9.8s" />
+        <rect x="1428.5" y="758.5" width="3" height="3" class="env-node-accent env-float" style="animation-delay:-11.2s" />
+        <rect x="518.5" y="878.5" width="3" height="3" class="env-node-accent env-float" style="animation-delay:-12.6s" />
+        <rect x="898.5" y="898.5" width="3" height="3" class="env-node-accent env-float" style="animation-delay:-14s" />
+        <rect x="1318" y="518" width="4" height="4" class="env-node-accent env-float" style="animation-delay:-15.4s" />
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+{
+  "id": "faq",
+  "note": "Each answer is grounded in the public portfolio content. Where the site does not state a fact, the answer says so instead of guessing.",
+  "faqs": [
+    {
+      "question": "What do you build?",
+      "answer": "HRB builds digital systems across web, AI, legal technology, document intelligence, and intelligent software architecture — practical systems where design, software, AI, and automation work together."
+    },
+    {
+      "question": "What services or capabilities do you offer?",
+      "answer": "Three capability areas: Web (modern interfaces and production-ready web applications), AI (AI products, agentic systems, retrieval, document intelligence, and automation), and Systems (the architecture connecting applications, data, APIs, automation, databases, retrieval, and intelligent agents)."
+    },
+    {
+      "question": "What projects have you built?",
+      "answer": "Three projects are presented in the Selected Work section: HRB Legal AI (an agentic legal AI platform), HRB Legal Reader (a legal document intelligence workflow), and HRB Digital Systems (a broader web, AI, and systems practice)."
+    },
+    {
+      "question": "How can I see your projects?",
+      "answer": "All three projects are showcased in the Selected Work section of this portfolio (the 'Work' navigation link). Public case-study URLs are not published yet — the site notes that case-study pages are still pending."
+    },
+    {
+      "question": "How can I contact HRB?",
+      "answer": "Use the contact email hrbempirein@gmail.com, shown in the Contact section of this site."
+    },
+    {
+      "question": "Is HRB open to new projects?",
+      "answer": "The site states availability as 'Selected projects and thoughtful collaborations.' The Open-for note reads: 'Selected projects and thoughtful collaborations.'"
+    },
+    {
+      "question": "What technologies does HRB use?",
+      "answer": "Per project: HRB Legal AI uses Python, FastAPI, PostgreSQL, pgvector, RAG, Agentic AI, and MCP. HRB Legal Reader uses OCR, Document Intelligence, Python, AI, and RAG. HRB Digital Systems uses React, TypeScript, Vite, AI, Automation, and System Architecture."
+    },
+    {
+      "question": "Where is HRB based?",
+      "answer": "This information is not available in the public portfolio."
+    },
+    {
+      "question": "Is HRB one person or a company?",
+      "answer": "The site does not disclose team structure. The About section is written in the first person ('I build at the intersection of design, software, and intelligent systems'), but the portfolio does not state whether HRB is an individual or a team."
+    },
+    {
+      "question": "Are the metrics on the site real results?",
+      "answer": "The site does not publish client metrics or quantified results. The Results and Clients sections present methodology and what the work is designed to enable — no invented figures. The testimonials shown in the Clients section are clearly labeled as illustrative examples, not genuine client feedback."
+    },
+    {
+      "question": "Does HRB publish quantified results or client lists?",
+      "answer": "No quantified client results, client names, or metrics are published. The portfolio explicitly avoids fabricated metrics. Its testimonials are labeled sample quotes intended to show a future layout, not authentic endorsements — verified feedback is not currently published."
+    },
+    {
+      "question": "Is HRB Legal AI available outside Pakistan?",
+      "answer": "The project is positioned for Pakistan-focused legal research and case-law discovery. The portfolio does not specify availability for other jurisdictions."
+    }
+  ],
+  "source": "src/data/capabilities.ts, src/data/projects.ts, src/data/results.ts, src/data/commitments.ts, src/data/testimonials.ts, src/data/contact.ts, docs/"
+}

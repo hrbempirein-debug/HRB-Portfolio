@@ -1,0 +1,572 @@
+@import 'tailwindcss';
+
+/* ------------------------------------------------------------------ */
+/*  Design tokens — generated into :root by Tailwind v4 @theme          */
+/* ------------------------------------------------------------------ */
+@theme {
+  /* Palette */
+  --color-ink: #0a0a0c;          /* near-black charcoal background */
+  --color-ink-soft: #101014;     /* elevated surface */
+  --color-paper: #f2f2f0;        /* off-white text */
+  --color-mist: #9ca0a8;         /* secondary text */
+  --color-dim: #5f6269;          /* muted text */
+  --color-lite: #d3dbe3;         /* large-type accent highlight */
+  --color-line: rgb(235 240 246 / 9%);
+
+  /* Typography */
+  --font-display: 'Space Grotesk Variable', 'Inter Variable', ui-sans-serif,
+    system-ui, sans-serif;
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+
+  /* Interactive visual environment tokens */
+  --env-line: rgb(226 232 240 / 13%);
+  --env-line-faint: rgb(226 232 240 / 7%);
+  --env-line-strong: rgb(226 232 240 / 30%);
+  --env-accent: rgb(152 180 205 / 55%);
+  --env-accent-soft: rgb(152 180 205 / 22%);
+  --env-core: rgb(160 190 214 / 55%);
+  --env-cursor: rgb(150 180 205 / 12%);
+
+  /* Capability accents — Section 02 (subtle identifiers, not neon) */
+  --cap-web: rgb(158 189 214 / 62%);
+  --cap-ai: rgb(135 134 255 / 55%);
+  --cap-sys: rgb(120 139 163 / 62%);
+}
+
+/* ------------------------------------------------------------------ */
+/*  Base                                                                */
+/* ------------------------------------------------------------------ */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-ink font-sans text-paper antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: rgb(152 180 205 / 35%);
+    color: var(--color-paper);
+  }
+
+  }
+
+/* ------------------------------------------------------------------ */
+/*  Reusable layout helpers                                             */
+/* ------------------------------------------------------------------ */
+@layer components {
+  .container-hero {
+    @apply mx-auto w-full max-w-6xl px-6 md:px-10;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Environment art — shared stroke / fill language                     */
+/* ------------------------------------------------------------------ */
+.env-line,
+.env-line-faint,
+.env-line-strong,
+.env-accent,
+.env-accent-soft,
+.env-node,
+.env-node-accent {
+  fill: none;
+  stroke-width: 1;
+}
+
+.env-line {
+  stroke: var(--env-line);
+}
+.env-line-faint {
+  stroke: var(--env-line-faint);
+}
+.env-line-strong {
+  stroke: var(--env-line-strong);
+}
+.env-accent {
+  stroke: var(--env-accent);
+}
+.env-accent-soft {
+  stroke: var(--env-accent-soft);
+}
+.env-node {
+  fill: var(--env-line-strong);
+  stroke: none;
+}
+.env-node-accent {
+  fill: var(--env-accent);
+  stroke: none;
+}
+
+/* Filled matter — soft translucent panels and luminous cores */
+.env-fill-accent {
+  fill: var(--env-accent);
+}
+.env-fill-core {
+  fill: var(--env-core);
+}
+.env-fill-panel {
+  fill: rgb(226 232 240 / 4%);
+}
+.env-fill-panel-strong {
+  fill: rgb(226 232 240 / 7%);
+}
+.env-fill-disc {
+  fill: rgb(152 180 205 / 6%);
+}
+
+/* Variable line weight — thin recedes, soft gains presence */
+.env-line-thin {
+  stroke-width: 0.75;
+}
+.env-line-soft {
+  stroke-width: 1.5;
+}
+
+/* Environmental depth layers — shared by all three states */
+.env-layer-bg {
+  opacity: 0.6;
+}
+.env-layer-mid {
+  opacity: 0.8;
+}
+.env-layer-fg {
+  opacity: 0.95;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Capability tone system — Section 02                                 */
+/*  A local accent variable per capability, used by HTML + SVG nodes.  */
+/*  The :root default keeps accent-bearing art visible even where no   */
+/*  cap-tone wrapper applies (About / Contact / the capabilities       */
+/*  connector); .cap-tone-* overrides it for its subtree.              */
+/* ------------------------------------------------------------------ */
+:root {
+  --cap-accent: rgb(152 180 205 / 60%);
+}
+.cap-tone-web {
+  --cap-accent: var(--cap-web);
+}
+.cap-tone-ai {
+  --cap-accent: var(--cap-ai);
+}
+.cap-tone-systems {
+  --cap-accent: var(--cap-sys);
+}
+.cap-accent-line {
+  stroke: var(--cap-accent);
+  fill: none;
+  stroke-width: 1;
+}
+.cap-accent-node {
+  fill: var(--cap-accent);
+  stroke: none;
+}
+.cap-accent-fill {
+  fill: var(--cap-accent);
+}
+
+/* ------------------------------------------------------------------ */
+/*  Ambient motion language (GPU-friendly transforms only)              */
+/*  Every environment shares the same motion vocabulary.               */
+/* ------------------------------------------------------------------ */
+@keyframes env-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes env-drift {
+  from {
+    transform: translate3d(0, -8px, 0);
+  }
+  to {
+    transform: translate3d(0, 8px, 0);
+  }
+}
+
+@keyframes env-drift-sm {
+  from {
+    transform: translate3d(0, -3px, 0);
+  }
+  to {
+    transform: translate3d(0, 3px, 0);
+  }
+}
+
+@keyframes env-drift-lg {
+  from {
+    transform: translate3d(0, -13px, 0);
+  }
+  to {
+    transform: translate3d(0, 13px, 0);
+  }
+}
+
+@keyframes env-march {
+  to {
+    stroke-dashoffset: -20px;
+  }
+}
+
+@keyframes env-travel {
+  to {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes env-pulse {
+  0%,
+  100% {
+    opacity: 0.22;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes env-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.1;
+  }
+  50% {
+    transform: translate3d(0, -16px, 0);
+    opacity: 0.45;
+  }
+}
+
+/* Ambient group drift -- speed separates the depth planes */
+.env-drift-bg {
+  animation: env-drift-sm 84s ease-in-out infinite alternate;
+}
+.env-drift {
+  animation: env-drift 44s ease-in-out infinite alternate;
+}
+.env-drift-fg {
+  animation: env-drift-lg 28s ease-in-out infinite alternate;
+}
+
+/* Slow rotating rings */
+.env-spin-slower {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: env-spin 150s linear infinite;
+}
+/* Defined last so it wins the cascade over the shorthand above. */
+.env-spin-reverse {
+  animation-direction: reverse;
+}
+
+/* Marching data flow along drawn lines */
+.env-march {
+  stroke-dasharray: 5 15;
+  animation: env-march 20s linear infinite;
+}
+
+/* A node traveling along an offset-path */
+.env-travel {
+  animation: env-travel 30s linear infinite;
+}
+
+/* Soft breathing */
+.env-pulse {
+  animation: env-pulse 6s ease-in-out infinite;
+}
+.env-float {
+  animation: env-float 14s ease-in-out infinite;
+}
+
+/* Slow horizontal glide for connective threads */
+@keyframes env-drift-x {
+  from {
+    transform: translate3d(-9px, 0, 0);
+  }
+  to {
+    transform: translate3d(9px, 0, 0);
+  }
+}
+.env-drift-x {
+  animation: env-drift-x 32s ease-in-out infinite alternate;
+}
+
+/* A vertical scan bar sweeping across a foreground console */
+@keyframes env-scan {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(84px);
+  }
+}
+.env-scanline {
+  animation: env-scan 11s ease-in-out infinite alternate;
+}
+
+/* Subtle slow atmosphere drift */
+.env-atmosphere {
+  animation: env-drift 60s ease-in-out infinite alternate;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Selected Work — Section 03                                          */
+/*  Editorial project showcases: quiet hover that rewards attention.   */
+/* ------------------------------------------------------------------ */
+
+/* Hover only on precise pointers — brightened accent, stable frame. The
+   artwork itself handles hover depth internally (AnimatedArtwork "work"). */
+@media (hover: hover) {
+  .work-group .work-title {
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .work-group:hover .work-title {
+    transform: translateY(-3px);
+  }
+
+  .work-group .work-meta {
+    transition: color 0.4s ease;
+  }
+  .work-group:hover .work-meta {
+    color: var(--color-mist);
+  }
+
+  .work-group .work-cta-arrow {
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .work-group:hover .work-cta-arrow {
+    transform: translateX(6px);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  About / Approach — Section 04                                       */
+/*  Editorial principle list: quiet pointer-only presence, no cards.   */
+/* ------------------------------------------------------------------ */
+.about-principle {
+  border-top: 1px solid var(--color-line);
+}
+.about-principle:first-child {
+  border-top: none;
+}
+
+@media (hover: hover) {
+  .about-group .about-principle {
+    transition: opacity 0.45s ease;
+  }
+  .about-group:hover .about-principle {
+    opacity: 0.45;
+  }
+  .about-group:hover .about-principle:hover {
+    opacity: 1;
+  }
+
+  .about-principle {
+    transition:
+      border-color 0.5s ease,
+      opacity 0.45s ease;
+    border-color: var(--color-line);
+  }
+  .about-principle:hover {
+    border-color: var(--env-line-strong);
+  }
+
+  .about-principle .about-num {
+    color: var(--color-dim);
+    transition: color 0.4s ease;
+  }
+  .about-principle:hover .about-num {
+    color: var(--color-paper);
+  }
+
+  .about-principle .about-title {
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .about-principle:hover .about-title {
+    transform: translateX(3px);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Footer — quiet page-end colophon                                    */
+/*  Back-to-top arrow lifts a couple of pixels, pointer-only.          */
+/*  An invisible hit area enlarges the small button to a proper touch  */
+/*  target without any visual change (WCAG 2.2 target size minimum).   */
+/* ------------------------------------------------------------------ */
+.footer-top {
+  position: relative;
+  isolation: isolate;
+}
+.footer-top::before {
+  content: '';
+  position: absolute;
+  inset: -12px;
+}
+@media (hover: hover) {
+  .footer-top .footer-top-arrow {
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .footer-top:hover .footer-top-arrow {
+    transform: translateY(-3px);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Keyboard focus — visible but quiet                                   */
+/* ------------------------------------------------------------------ */
+:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--color-lite) 90%, transparent);
+  outline-offset: 3px;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Coarse pointers (touch) — quieter environment, fewer distractions    */
+/* ------------------------------------------------------------------ */
+@media (pointer: coarse) {
+  .env-line,
+  .env-line-faint,
+  .env-line-strong,
+  .env-accent,
+  .env-accent-soft {
+    opacity: 0.5;
+  }
+  .env-node,
+  .env-node-accent {
+    opacity: 0.7;
+  }
+  .cap-accent-line,
+  .cap-accent-node,
+  .cap-accent-fill {
+    opacity: 0.55;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Small screens — drop the most peripheral structure so the hero     */
+/*  and body art stays readable and cheap on phones. The body-*       */
+/*  classes gate the farthest depth layer of non-hero compositions.   */
+/* ------------------------------------------------------------------ */
+@media (max-width: 767px) {
+  .env-hero-bg-far,
+  .env-hero-mg-extra,
+  .body-layer-far,
+  .body-extra {
+    opacity: 0;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Reduced motion — collapse all decoration animation                  */
+/* ------------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* No hover lifts or displacements for reduced-motion users either */
+  .work-group:hover .work-visual,
+  .work-group:hover .work-title,
+  .work-group:hover .work-cta-arrow,
+  .about-principle:hover .about-title,
+  .footer-top:hover .footer-top-arrow,
+  .chat-launcher:hover {
+    transform: none;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  AI Assistant — floating chat launcher + panel                       */
+/*  GPU-friendly (transform/opacity only); the global reduced-motion     */
+/*  block above already kills these, and explicit rules below keep them  */
+/*  quiet for reduced-motion users so no animation "freezes" hot.        */
+/* ------------------------------------------------------------------ */
+.chat-launcher-glow {
+  pointer-events: none;
+  position: absolute;
+  inset: -9px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgb(135 134 255 / 0.3) 0%, transparent 68%);
+  opacity: 0.5;
+  animation: hrb-glow-breathe 5.5s ease-in-out infinite;
+}
+
+/* While the panel is open the glow steps back so the conversation surface
+   reads as calm, not glowing. */
+.chat-launcher-glow--open {
+  animation: none;
+  opacity: 0.14;
+}
+
+@keyframes hrb-glow-breathe {
+  0%,
+  100% {
+    opacity: 0.26;
+    transform: scale(0.96);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.07);
+  }
+}
+
+.chat-typing-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background: var(--color-mist);
+  animation: hrb-typing 1.1s ease-in-out infinite;
+}
+.chat-typing-dot:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.chat-typing-dot:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes hrb-typing {
+  0%,
+  60%,
+  100% {
+    opacity: 0.3;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(-3px);
+  }
+}
+
+.chat-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(235 240 246 / 20%) transparent;
+  overscroll-behavior: contain;
+}
+.chat-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.chat-scroll::-webkit-scrollbar-thumb {
+  background: rgb(235 240 246 / 18%);
+  border-radius: 9999px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chat-launcher-glow {
+    animation: none;
+    opacity: 0.35;
+  }
+  .chat-typing-dot {
+    animation: none;
+    opacity: 0.45;
+  }
+}

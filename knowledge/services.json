@@ -1,0 +1,45 @@
+{
+  "id": "services",
+  "intro": "HRB designs digital experiences, intelligent systems, and the infrastructure that connects them. The three service areas are Web, AI, and Systems.",
+  "services": [
+    {
+      "id": "web-development",
+      "name": "Web",
+      "description": "Modern interfaces and production-ready web applications designed around clarity, interaction, performance, and maintainable architecture.",
+      "keywords": ["web", "web development", "web applications", "interfaces", "responsive", "performance", "frontend", "react", "typescript", "vite"],
+      "deliverables": [
+        "Modern interfaces",
+        "Production-ready web applications",
+        "Responsive layouts",
+        "Polished interaction and clarity"
+      ]
+    },
+    {
+      "id": "ai-development",
+      "name": "AI",
+      "description": "AI-powered products and workflows spanning agentic systems, retrieval, document intelligence, legal research, and grounded automation.",
+      "keywords": ["ai", "artificial intelligence", "ai agents", "agentic", "agentic ai", "rag", "retrieval", "llm", "automation", "workflows", "document intelligence"],
+      "deliverables": [
+        "AI-powered products",
+        "Agentic AI systems and workflows",
+        "Grounded retrieval (RAG) systems",
+        "Document intelligence",
+        "Automation"
+      ]
+    },
+    {
+      "id": "system-architecture",
+      "name": "Systems",
+      "description": "The architecture connecting applications, data, APIs, automation, databases, retrieval systems, and intelligent agents into coherent digital products.",
+      "keywords": ["systems", "architecture", "system architecture", "integration", "apis", "databases", "backend", "scale", "infrastructure"],
+      "deliverables": [
+        "Coherent system architecture",
+        "Application, data and API integration",
+        "Retrieval and database systems",
+        "Automation and intelligent agents"
+      ]
+    }
+  ],
+  "approachSummary": "The work is measured by what it enables — clearer workflows, useful intelligence, connected systems, and foundations that can evolve as a product and organization grow.",
+  "source": "src/data/capabilities.ts, src/data/results.ts"
+}

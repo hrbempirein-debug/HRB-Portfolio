@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" class="env-layer-root" data-env="ai" role="img" aria-label="AI — neural intelligence field">
+  <defs>
+    <radialGradient id="ai-nebula" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#818cf8" stop-opacity="0.12" />
+      <stop offset="0.55" stop-color="#818cf8" stop-opacity="0.04" />
+      <stop offset="1" stop-color="#818cf8" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="ai-attn" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#a5b4fc" stop-opacity="0.16" />
+      <stop offset="1" stop-color="#a5b4fc" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <style>
+    :root {
+      --env-line: rgb(226 232 240 / 13%);
+      --env-line-faint: rgb(226 232 240 / 7%);
+      --env-line-strong: rgb(226 232 240 / 30%);
+      --env-accent: rgb(152 180 205 / 55%);
+      --env-accent-soft: rgb(152 180 205 / 22%);
+      --env-core: rgb(160 190 214 / 55%);
+    }
+    .env-line,.env-line-faint,.env-line-strong,.env-accent,.env-accent-soft,.env-node,.env-node-accent{fill:none;stroke-width:1}
+    .env-line{stroke:var(--env-line)}
+    .env-line-faint{stroke:var(--env-line-faint)}
+    .env-line-strong{stroke:var(--env-line-strong)}
+    .env-accent{stroke:var(--env-accent)}
+    .env-accent-soft{stroke:var(--env-accent-soft)}
+    .env-node{fill:var(--env-line-strong);stroke:none}
+    .env-node-accent{fill:var(--env-accent);stroke:none}
+    .env-fill-accent{fill:var(--env-accent)}
+    .env-fill-core{fill:var(--env-core)}
+    .env-line-thin{stroke-width:.75}
+    .env-line-soft{stroke-width:1.5}
+    .env-layer-bg{opacity:.6}
+    .env-layer-mid{opacity:.8}
+    .env-layer-fg{opacity:.95}
+    @keyframes env-spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+    @keyframes env-drift{from{transform:translate3d(0,-8px,0)}to{transform:translate3d(0,8px,0)}}
+    @keyframes env-drift-sm{from{transform:translate3d(0,-3px,0)}to{transform:translate3d(0,3px,0)}}
+    @keyframes env-drift-lg{from{transform:translate3d(0,-13px,0)}to{transform:translate3d(0,13px,0)}}
+    @keyframes env-march{to{stroke-dashoffset:-20px}}
+    @keyframes env-travel{to{offset-distance:100%}}
+    @keyframes env-pulse{0%,100%{opacity:.22}50%{opacity:.7}}
+    @keyframes env-float{0%,100%{transform:translate3d(0,0,0);opacity:.1}50%{transform:translate3d(0,-16px,0);opacity:.45}}
+    @keyframes env-drift-x{from{transform:translate3d(-9px,0,0)}to{transform:translate3d(9px,0,0)}}
+    .env-drift-bg{animation:env-drift-sm 84s ease-in-out infinite alternate}
+    .env-drift{animation:env-drift 44s ease-in-out infinite alternate}
+    .env-drift-fg{animation:env-drift-lg 28s ease-in-out infinite alternate}
+    .env-drift-x{animation:env-drift-x 32s ease-in-out infinite alternate}
+    .env-spin-slower{transform-box:fill-box;transform-origin:center;animation:env-spin 150s linear infinite}
+    .env-spin-reverse{animation-direction:reverse}
+    .env-march{stroke-dasharray:5 15;animation:env-march 20s linear infinite}
+    .env-travel{animation:env-travel 30s linear infinite}
+    .env-pulse{animation:env-pulse 6s ease-in-out infinite}
+    .env-float{animation:env-float 14s ease-in-out infinite}
+    @media (prefers-reduced-motion: reduce){
+      .env-drift-bg,.env-drift,.env-drift-fg,.env-drift-x,.env-spin-slower,.env-march,.env-travel,.env-pulse,.env-float{animation-duration:.001ms !important;animation-iteration-count:1 !important}
+    }
+  </style>
+
+  <g class="env-layer-bg" data-depth="bg">
+    <g class="env-drift-bg ai-depth">
+      <circle cx="600" cy="620" r="720" fill="url(#ai-nebula)" />
+      <circle cx="1280" cy="520" r="520" fill="url(#ai-nebula)" />
+    </g>
+    <g class="env-drift-bg env-hero-bg-far ai-connections ai-nodes" stroke="#a5b4fc" stroke-width="1">
+      <path d="M 700 40 C 900 70 1100 50 1290 80" fill="none" />
+      <path d="M 120 300 C 200 260 280 240 350 200" fill="none" />
+      <circle cx="1100" cy="60" r="1" class="env-node" />
+      <circle cx="1250" cy="110" r="1.5" class="env-node" />
+      <circle cx="1400" cy="90" r="1" class="env-node" />
+      <circle cx="1480" cy="170" r="1.5" class="env-node" />
+      <circle cx="720" cy="90" r="1" class="env-node" />
+      <circle cx="980" cy="60" r="1" class="env-node" />
+    </g>
+  </g>
+
+  <g class="env-drift ai-connections ai-orbits" data-depth="mid">
+    <path class="env-line-strong env-line-soft env-march" d="M 660 560 C 780 520 940 440 1100 350" fill="none" style="animation-duration:24s" />
+    <circle class="env-travel env-node-accent" r="3" style="offset-path:path('M 660 560 C 780 520 940 440 1100 350');animation-duration:26s" />
+
+    <g class="ai-connections">
+      <path class="env-line-faint env-drift-x" d="M 560 540 C 480 400 420 320 330 260" fill="none" />
+      <circle cx="360" cy="280" r="2" class="env-node-accent env-float" />
+      <path class="env-line-faint env-drift-x" d="M 620 500 C 700 380 760 300 830 220" fill="none" />
+      <circle cx="830" cy="230" r="2" class="env-node-accent env-float" />
+      <path class="env-line-faint env-drift-x" d="M 690 600 C 820 560 900 520 1010 480" fill="none" />
+      <circle cx="920" cy="520" r="2" class="env-node-accent env-float" />
+      <path class="env-line-faint env-drift-x" d="M 660 700 C 760 820 840 860 960 900" fill="none" />
+      <circle cx="880" cy="860" r="2" class="env-node-accent env-float" />
+      <path class="env-line-faint env-drift-x" d="M 540 700 C 460 790 420 830 340 880" fill="none" />
+      <circle cx="380" cy="850" r="2" class="env-node-accent env-float" />
+      <path class="env-line-faint env-drift-x" d="M 600 500 C 540 440 500 400 470 360" fill="none" />
+      <circle cx="480" cy="380" r="2" class="env-node-accent env-float" />
+    </g>
+
+    <g class="env-hero-mg-extra ai-connections">
+      <path class="env-line-faint env-march" d="M 660 500 C 740 380 820 240 880 160" fill="none" />
+      <circle class="env-travel env-node-accent" r="2" style="offset-path:path('M 660 500 C 740 380 820 240 880 160')" />
+    </g>
+
+    <g class="env-line-faint ai-nodes" transform="translate(1140, 300)">
+      <line x1="0" y1="0" x2="60" y2="40" />
+      <line x1="0" y1="0" x2="-50" y2="40" />
+      <line x1="0" y1="0" x2="20" y2="-40" />
+      <circle cx="0" cy="0" r="2.5" class="env-node" />
+      <circle cx="60" cy="40" r="2" class="env-node" />
+      <circle cx="-50" cy="40" r="2" class="env-node" />
+      <circle cx="20" cy="-40" r="2" class="env-node" />
+    </g>
+    <g class="env-line-faint env-hero-mg-extra ai-nodes" transform="translate(900, 120)">
+      <line x1="0" y1="0" x2="50" y2="-40" />
+      <line x1="0" y1="0" x2="-50" y2="-40" />
+      <circle cx="0" cy="0" r="2" class="env-node" />
+      <circle cx="50" cy="-40" r="2" class="env-node" />
+      <circle cx="-50" cy="-40" r="2" class="env-node" />
+    </g>
+
+    <circle cx="600" cy="620" r="150" fill="url(#ai-attn)" />
+    <g class="env-spin-slower ai-orbits">
+      <circle cx="600" cy="620" r="88" class="env-line-faint" />
+      <circle cx="600" cy="620" r="58" class="env-line" />
+    </g>
+    <circle class="env-travel env-node-accent" r="2" style="offset-path:path('M 600 620 m -58 0 a 58 58 0 1 1 116 0 a 58 58 0 1 1 -116 0')" />
+    <g class="env-hero-mg-extra" transform="translate(490, 700)">
+      <path d="M -20 0 H 0 V 20" fill="none" class="env-line" />
+    </g>
+  </g>
+
+  <g class="env-layer-fg" data-depth="fg">
+    <g class="env-drift-fg ai-core ai-particles ai-nodes">
+      <circle class="env-fill-accent" cx="600" cy="620" r="26" />
+      <circle class="env-fill-core env-pulse" cx="600" cy="620" r="10" />
+      <circle class="env-node" cx="600" cy="620" r="3" />
+
+      <path d="M 536 684 v 20 M 536 704 h -20" fill="none" class="env-accent-soft" />
+      <path d="M 664 556 v -20 M 664 536 h 20" fill="none" class="env-accent-soft" />
+
+      <circle class="env-node-accent env-float" cx="658" cy="620" r="2.5" style="animation-delay:-3s" />
+      <circle class="env-node-accent env-float" cx="552" cy="654" r="2.5" style="animation-delay:-7s" />
+      <circle class="env-node-accent env-float" cx="612" cy="558" r="2.5" style="animation-delay:-11s" />
+    </g>
+  </g>
+</svg>

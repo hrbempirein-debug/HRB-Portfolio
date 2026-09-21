@@ -1,0 +1,29 @@
+{
+  "id": "hrb-legal-reader",
+  "name": "HRB Legal Reader",
+  "category": "Document Intelligence",
+  "summary": "A legal document intelligence workflow focused on making complex and difficult-to-read legal documents more accessible through document processing, OCR, structured extraction, and AI-assisted understanding.",
+  "problem": "Complex and difficult-to-read legal documents are hard to parse and understand. HRB Legal Reader is a workflow focused on making that material more accessible.",
+  "solution": "A document intelligence workflow that combines document processing, OCR, structured extraction, and AI-assisted understanding to make complex legal documents more usable.",
+  "features": [
+    "Document processing",
+    "OCR of document content",
+    "Structured extraction",
+    "AI-assisted understanding",
+    "Accessibility of complex legal documents"
+  ],
+  "technologies": ["OCR", "Document Intelligence", "Python", "AI", "RAG"],
+  "targetUsers": "Built around the need to make complex, difficult-to-read legal documents more accessible; the portfolio does not specify individual roles or organisations.",
+  "businessApplications": [
+    "Making complex legal documents more accessible",
+    "Document processing pipelines",
+    "AI-assisted understanding of legal material"
+  ],
+  "relatedProjects": ["HRB Legal AI", "HRB Digital Systems"],
+  "limitations": [
+    "No public case-study URL is published yet.",
+    "No client names, metrics, or quantified results are disclosed in the public portfolio."
+  ],
+  "status": "Listed project on this portfolio (Selected Work, item 02).",
+  "source": "src/data/projects.ts"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "hrb-legal-ai",
+  "name": "HRB Legal AI",
+  "category": "AI / Legal Technology",
+  "summary": "An agentic legal AI platform designed for Pakistan-focused legal research, case-law discovery, document intelligence, grounded retrieval, and human-reviewed legal workflows.",
+  "problem": "The platform is positioned for Pakistan-focused legal research and case-law discovery, and for legal document intelligence — domains where grounded and reliable retrieval matters. The public portfolio does not publish a detailed problem statement or measured outcomes.",
+  "solution": "An agentic legal AI platform that combines grounded retrieval with human-reviewed legal workflows. The description emphasises agentic behaviour, dependable retrieval, and human review rather than unverified automation.",
+  "features": [
+    "Pakistan-focused legal research",
+    "Case-law discovery",
+    "Document intelligence",
+    "Grounded retrieval",
+    "Human-reviewed legal workflows",
+    "Agentic AI workflows"
+  ],
+  "technologies": ["Python", "FastAPI", "PostgreSQL", "pgvector", "RAG", "Agentic AI", "MCP"],
+  "targetUsers": "Positioned for work with Pakistan-focused legal research and case-law discovery. The portfolio does not specify individual roles or organisations.",
+  "businessApplications": [
+    "Legal research and case-law discovery workflows",
+    "Legal document intelligence",
+    "Grounded, verifiable retrieval over legal material"
+  ],
+  "relatedProjects": ["HRB Legal Reader", "HRB Digital Systems"],
+  "limitations": [
+    "No public case-study URL is published yet.",
+    "No client names, metrics, or quantified results are disclosed in the public portfolio."
+  ],
+  "status": "Featured project on this portfolio (Selected Work, item 01).",
+  "source": "src/data/projects.ts"
+}

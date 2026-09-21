@@ -1,0 +1,30 @@
+{
+  "id": "hrb-digital-systems",
+  "name": "HRB Digital Systems",
+  "category": "Digital Systems",
+  "summary": "A broader digital systems practice combining modern web applications, AI-powered workflows, automation, structured content systems, and production-oriented software architecture.",
+  "problem": "Organisations need digital systems where applications, AI, automation, content, and architecture work together as one coherent product rather than as disconnected parts.",
+  "solution": "A digital systems practice that combines modern web application development, AI-powered workflows, automation, structured content systems, and production-oriented software architecture.",
+  "features": [
+    "Modern web applications",
+    "AI-powered workflows",
+    "Automation",
+    "Structured content systems",
+    "Production-oriented software architecture"
+  ],
+  "technologies": ["React", "TypeScript", "Vite", "AI", "Automation", "System Architecture"],
+  "targetUsers": "Teams and organisations that need web applications, AI-powered workflows, and coherent system architecture. The portfolio does not specify individual roles or industries.",
+  "businessApplications": [
+    "Web platforms and production web applications",
+    "AI-powered workflows and automation",
+    "Structured content systems",
+    "System architecture and integration"
+  ],
+  "relatedProjects": ["HRB Legal AI", "HRB Legal Reader"],
+  "limitations": [
+    "No public case-study URL is published yet.",
+    "No client names, metrics, or quantified results are disclosed in the public portfolio."
+  ],
+  "status": "Listed project on this portfolio (Selected Work, item 03).",
+  "source": "src/data/projects.ts, src/data/capabilities.ts"
+}

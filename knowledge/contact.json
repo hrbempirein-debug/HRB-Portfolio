@@ -1,0 +1,13 @@
+{
+  "id": "contact",
+  "email": "hrbempirein@gmail.com",
+  "emailLabel": "Email",
+  "availabilityLabel": "Open for",
+  "availability": "Selected projects and thoughtful collaborations.",
+  "statement": "For digital products, intelligent systems, and software that needs to move beyond the ordinary.",
+  "engagement": {
+    "path": "The Contact section of this portfolio (labelled 'Let's Build What's Next') is the engagement pathway. Visitors who want to explore building something should email the address shown there.",
+    "guidance": "Before contacting, it helps to outline the problem, the type of system, and the goal — the conversation can shape a custom solution from there."
+  },
+  "source": "src/data/contact.ts, docs/CONTENT_REQUIREMENTS.md"
+}

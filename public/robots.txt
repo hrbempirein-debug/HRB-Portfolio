@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# No Sitemap line yet — the production domain is not confirmed.
+# Add "Sitemap: https://YOUR-DOMAIN/sitemap.xml" here once a real
+# sitemap exists under the confirmed production origin.

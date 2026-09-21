@@ -1,0 +1,31 @@
+{
+  "id": "methodology",
+  "philosophy": "I build at the intersection of design, software, and intelligent systems. The focus is on building practical digital systems where thoughtful interface design, modern software engineering, artificial intelligence, and automation work together.",
+  "principles": [
+    {
+      "title": "Clarity",
+      "description": "Complex systems should remain understandable. Interfaces, workflows, and information should communicate their purpose without unnecessary friction."
+    },
+    {
+      "title": "Intelligence",
+      "description": "AI should solve useful problems rather than exist as decoration. The focus is on grounded, practical intelligence that supports real workflows."
+    },
+    {
+      "title": "Systems",
+      "description": "Strong products depend on the architecture behind them. Data, APIs, retrieval, automation, agents, and interfaces should work as one coherent system."
+    },
+    {
+      "title": "Craft",
+      "description": "Technical depth and visual quality belong together. Details in interaction, performance, structure, and implementation shape the final experience."
+    }
+  ],
+  "qualitySignals": [
+    "AI is applied where it can reduce friction, surface useful information, and support decisions without becoming a layer of unnecessary complexity.",
+    "Complex processes become easier to understand when information, interfaces, and automation are designed as one connected experience.",
+    "Applications, data, APIs, retrieval, automation, and intelligent agents can work together as one coherent digital system.",
+    "The goal is not simply to ship an interface — it is to create a foundation that can evolve as the product, workflow, and organization grow.",
+    "Grounded, practical intelligence is preferred: retrieval is used so answers rest on source material, and legal workflows are human-reviewed."
+  ],
+  "howWeMeasure": "Digital work is measured by what it enables — clearer workflows, more capable software, better access to information, and systems that help complex operations move forward.",
+  "source": "src/data/about.ts, src/data/results.ts, src/data/projects.ts"
+}
